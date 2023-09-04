@@ -1,0 +1,81 @@
+/* ==== inicia responsive ======= */
+@media (width < 1024px){
+    .products-home figure{
+        width: 48%;
+    }
+}
+
+
+@media (width < 768px){
+    /* nav */
+    nav{
+        flex-direction: column;
+    }
+    /* headings */
+    main h2{
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    /* footer */
+    footer{
+        flex-direction: column;
+        div:first-child{
+            margin-top: 6px;
+            color: #ff1493;
+        }
+        div:nth-child(3){
+            margin-top: 10px;
+        }
+    }
+    /* index */
+    .products-home figure,
+    .products-home figure button{
+        width: 100%;
+    }
+    /* nosotros */
+    .about__box,
+    .about__box--reverse{
+        flex-direction: column;
+    } 
+    /* tienda */
+    .tienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        "actions" 
+        "filters" 
+        "prod1"
+        "prod2"
+        "prod3" 
+        "prod4";
+        gap: 10px;
+        .actions{
+            justify-content: center;
+        }
+        .filters span,
+        .filters ul,
+        .filters label,
+        .filters input[type="checkbox"]{
+            display: none;
+        }
+        select{
+            background-color: rgb(243, 245, 245);
+            width: 100%;
+            padding: 6px;
+        }
+        .prod1{
+            flex-direction: column;
+        }
+        .prod1 p,
+        .prod2 p{
+                width: 100%;
+                font-size: 1em;
+                line-height: 1.2em;
+                padding-bottom: 10px;
+            }
+        .prod1,
+        .prod2{
+            padding: 0 10px;
+        }
+    }
+}

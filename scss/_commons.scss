@@ -1,0 +1,104 @@
+*{
+    font-family: $mainFont;
+    box-sizing: border-box;
+}
+
+/* selectores generales a todo el proyecto */
+h1,h2,h3,h4{
+    color: $mainColor;
+}
+h1{
+    font-size: $textXxL;
+    margin-bottom: 10px 0;
+}
+h2{
+    font-size: $textXl;
+}
+p{
+    font-size: 1.1em;
+    line-height: 1.3em;
+    font-weight: 300;
+}
+header {
+    img{
+        width: 100%;
+    }
+}
+
+.card {
+    h2{
+        color: $mainColor;
+    }
+}
+
+/*  ========= footer ========= */
+footer{
+    background-color: rgb(255, 20, 146);
+    padding: 8px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        text-decoration: none;
+    }
+    svg{
+        width: 30px;
+        height: 30px;
+        fill: white;
+        margin-right: 10px;
+    }
+    ul li{
+        list-style-type: none;
+    }
+    a{
+        color:$white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+}
+
+/* utilities del proyecto */
+.text-dark{
+    color: rgb(94, 95, 95);
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-italic{
+    font-style: italic;
+}
+.text-bold{
+    font-weight: 600;
+}
+.bg-gris{
+    background-color: rgb(243, 245, 245);
+}
+.bg-pink{
+    background-color: $mainColor;
+    color: $white;
+}
+
+.container{
+    background-color: pink;
+    width: 90%;
+    height: auto;
+    overflow-y:auto;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border: solid 1px rgb(181, 179, 179);
+}
+
+.box-top{
+    padding: 4px 0;
+    text-align: center;
+    color: gray;
+    font-size: .9em;
+}
+
