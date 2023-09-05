@@ -1,4 +1,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+.header-gral, .header-contact, .header-admin {
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/headers/header-home.jpg);
+}
+
+.header-admin {
+  background-image: url(../img/headers/header2.jpg);
+}
+
+.header-contact {
+  background-image: url(../img/headers/header3.jpg);
+}
+
+.txt-box {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: gray;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.txt-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: black;
+  padding: 30px;
+  margin: 5px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.bg-violet {
+  background-color: #7f3472;
+}
+
+.bg-pink {
+  background-color: #dfa1d4;
+}
+
+.box-shadow {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+}
+
+.box {
+  width: 100vw;
+  height: 95vh;
+  background-color: grey;
+}
+
+.text-1 {
+  font-size: 0.25em;
+}
+
+.text-2 {
+  font-size: 0.5em;
+}
+
+.text-3 {
+  font-size: 0.75em;
+}
+
+.text-4 {
+  font-size: 1em;
+}
+
+.text-5 {
+  font-size: 1.25em;
+}
+
+.text-6 {
+  font-size: 1.5em;
+}
+
+.text-7 {
+  font-size: 1.75em;
+}
+
+.text-8 {
+  font-size: 2em;
+}
+
+.text-9 {
+  font-size: 2.25em;
+}
+
+.text-10 {
+  font-size: 2.5em;
+}
+
+.facebook-icon {
+  background-image: url(../img/icons/facebook.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.twitter-icon {
+  background-image: url(../img/icons/twitter.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.instagram-icon {
+  background-image: url(../img/icons/instagram.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -6,7 +130,7 @@
 
 /* selectores generales a todo el proyecto */
 h1, h2, h3, h4 {
-  color: rgb(248, 35, 149);
+  color: rgb(73, 27, 55);
 }
 
 h1 {
@@ -29,12 +153,12 @@ header img {
 }
 
 .card h2 {
-  color: rgb(248, 35, 149);
+  color: rgb(73, 27, 55);
 }
 
 /*  ========= footer ========= */
 footer {
-  background-color: rgb(255, 20, 146);
+  background-color: rgb(73, 27, 55);
   padding: 8px 30px;
   display: flex;
   flex-direction: row;
@@ -89,7 +213,7 @@ footer a {
 }
 
 .bg-pink {
-  background-color: rgb(248, 35, 149);
+  background-color: rgb(73, 27, 55);
   color: rgb(238, 233, 233);
 }
 
@@ -110,8 +234,26 @@ footer a {
   font-size: 0.9em;
 }
 
+.box-divider {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(73, 27, 55);
+}
+
+.box-secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-image: url(../img/backgrounds/bubble.png);
+}
+
 .botonera {
-  background-color: rgb(248, 35, 149);
+  background-color: rgb(73, 27, 55);
 }
 .botonera img {
   width: 150px;
@@ -120,7 +262,7 @@ footer a {
   color: rgb(238, 233, 233);
 }
 .botonera a:hover {
-  color: rgb(248, 35, 149);
+  color: rgb(73, 27, 55);
 }
 
 /* =============== BEM (nosotros) =============== */
@@ -147,7 +289,7 @@ footer a {
 .about__link--left {
   display: block;
   text-align: left;
-  color: rgb(248, 35, 149);
+  color: rgb(73, 27, 55);
   text-decoration: none;
   font-size: 1.2em;
   margin: 10px 0;
@@ -181,7 +323,7 @@ footer a {
   justify-content: center;
 }
 .products-home figure figcaption {
-  color: rgb(248, 35, 149);
+  color: rgb(73, 27, 55);
   font-size: 1.4em;
 }
 .products-home figure p {
@@ -189,7 +331,7 @@ footer a {
 }
 .products-home figure button {
   border: none;
-  background-color: deeppink;
+  background-color: rgb(73, 27, 55);
   padding: 6px;
   color: white;
   border-radius: 4px;
@@ -197,7 +339,7 @@ footer a {
 }
 .products-home figure button:hover {
   cursor: pointer;
-  background-color: rgb(236, 90, 114);
+  background-color: rgb(73, 27, 55);
 }
 
 /* TIENDA CON GRID */
@@ -330,7 +472,7 @@ footer a {
   }
   footer div:first-child {
     margin-top: 6px;
-    color: #ff1493;
+    color: rgb(73, 27, 55);
   }
   footer div:nth-child(3) {
     margin-top: 10px;

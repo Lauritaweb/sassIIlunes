@@ -33,7 +33,7 @@ header {
 
 /*  ========= footer ========= */
 footer{
-    background-color: rgb(255, 20, 146);
+    background-color: $mainColor;
     padding: 8px 30px;
     display: flex;
     flex-direction: row;
@@ -102,3 +102,11 @@ footer{
     font-size: .9em;
 }
 
+.box-divider{
+    @include flexbox(row,flex-end,center,wrap);
+    background-color: $mainColor;
+}
+.box-secondary{
+    @include flexbox(column,center,center,nowrap);
+    background-image: url(../img/backgrounds/bubble.png);
+}
